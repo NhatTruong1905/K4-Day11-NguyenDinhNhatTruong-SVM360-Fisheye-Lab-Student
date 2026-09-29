@@ -9,7 +9,7 @@
 - Tên định danh vai A dùng cho --self: truong
 - Kênh trao đổi nội bộ: Discord / Telegram K4 AI Lab
 - Đại diện nộp (vai C): Bùi Việt Nam, MSSV: 2A202602272
-- Commit chốt bài: 1a31c1d5abe542a9f1eaa555942f1c71f9b11f34 (hoặc commit chốt nộp cuối cùng)
+- Commit chốt bài: be698ff5a9f6346c548d86f668f24b6cb18972e4
 
 ## 2. Ba vai chính
 | Vai | Họ và tên | MSSV | Tên định danh trong mode | Trách nhiệm | Bằng chứng đóng góp |
