@@ -86,8 +86,8 @@
     },
     {
       "file": "r2_qa/qa_review.md",
-      "lines": 11,
-      "sha256": "8ead1fea49280f95d421dff25c4b5f1335439bf9e3896c6befa79d16d753fa8b"
+      "lines": 16,
+      "sha256": "dc25f18e3424761869eb789888ef5b6f0bc6ee0cd511b90d1c4848ac1df520f2"
     },
     {
       "file": "r2_qa/qa_overlay.html",
