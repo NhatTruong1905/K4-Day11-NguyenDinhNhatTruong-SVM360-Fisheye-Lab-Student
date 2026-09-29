@@ -1,0 +1,9 @@
+round: rework
+slice: B1-mid
+sha256: 4b57bf256c4b27031363f9453fb52270766527e432fc3f5375dab99b80318c53
+code: 4B57-BF25
+locked_at: 2026-09-29T10:17:42+07:00
+shapes: box=25, polygon=14
+prefill_kept: 25
+prefill_edited: 0
+new: 0

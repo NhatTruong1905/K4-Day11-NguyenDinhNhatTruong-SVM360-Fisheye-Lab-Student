@@ -1,6 +1,5 @@
 # Sensor context
 
-- TODO — Rig: mô tả ngắn xe/camera gắn ở đâu theo hiểu biết của bạn từ ảnh (ADASIND không kèm tài liệu rig chi
-  tiết, ghi theo quan sát).
-- TODO — `ego_body` nhìn thấy ở đâu trong frame (góc capo, gương, tay lái...).
-- TODO — Vòng kính (lens circle) nằm ở vị trí nào trong ảnh, chiếm khoảng bao nhiêu phần khung hình.
+- Rig: Camera fisheye đơn gắn trên phương tiện di chuyển trong môi trường giao thông hỗn hợp (ADASIND dataset). Theo quan sát ảnh, camera được đặt ở độ cao trung bình (tầm kính chắn gió/nóc capo hoặc gương chiếu hậu, khoảng 1.2m - 1.5m so với mặt đất), hướng nhìn về phía trước (front-facing) bao quát toàn cảnh lòng đường và vỉa hè hai bên.
+- `ego_body`: Nhìn thấy ở góc dưới bên trái/đáy khung hình (một phần mép thân xe, gương chiếu hậu hoặc viền nắp capo/tay lái của phương tiện mang camera). Thân xe ego xuất hiện ở đa số frame (46/48 frame), trừ một số frame đặc biệt không nhìn thấy thân xe như adasind_006840 và adasind_271039.
+- Vòng kính (lens circle): Nằm ở trung tâm khung hình dọc (1080x1920), với tâm xấp xỉ cx ≈ 450–610 px, cy ≈ 890–1020 px, bán kính r ≈ 770–830 px. Vòng kính bao phủ gần như toàn bộ chiều rộng khung hình (1080 px), tạo ra vùng nhìn hữu ích dạng hình tròn với độ méo quang học tăng dần từ tâm ra rìa (radial distortion), bốn góc ngoài rìa là vành đen quang học (vignetting/black border).

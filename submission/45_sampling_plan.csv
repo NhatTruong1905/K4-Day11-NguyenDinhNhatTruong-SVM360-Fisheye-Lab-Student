@@ -1,9 +1,9 @@
 camera_id,slice_type,frames,risk,rationale
-front,normal,,TODO,TODO
-front,hard,,TODO,TODO
-rear,normal,,TODO,TODO
-rear,hard,,TODO,TODO
-left,normal,,TODO,TODO
-left,hard,,TODO,TODO
-right,normal,,TODO,TODO
-right,hard,,TODO,TODO
+front,normal,30,Va chạm trực diện với phương tiện cùng chiều hoặc ngược chiều ở dải tốc độ trung bình trong luồng giao thông thông thường,Kiểm chuẩn chất lượng nhận diện cơ bản của camera trước trong điều kiện ánh sáng ổn định và đường quang đãng
+front,hard,35,Bỏ sót người đi bộ băng cắt sát đầu xe hoặc xe máy vượt ẩu; chói sáng đèn pha ngược chiều ban đêm và giọt nước mưa bám trên thấu kính fisheye,Vùng di chuyển hướng tới có mức độ rủi ro an toàn sinh mạng cao nhất; cần tập trung kiểm thử các ca biên khắc nghiệt
+rear,normal,20,Va chạm khi lùi xe tốc độ thấp trong bãi đỗ xe hoặc ngõ hẻm thông thoáng không có vật cản khuất tầm nhìn,Kiểm tra độ chính xác của đường căn vạch đỗ xe và nhận diện chướng ngại vật tĩnh cơ bản phía sau
+rear,hard,25,Bỏ sót vật thể thấp dưới tầm gương chiếu hậu (trẻ nhỏ/thú cưng) hoặc trụ bê tông điểm mù khi lùi trong đêm thiếu sáng; bùn đất bám ống kính sau,Đảm bảo an toàn tuyệt đối cho tính năng phanh khẩn cấp khi lùi (Rear AEB) và hỗ trợ tự động đỗ xe (APA)
+left,normal,20,Va chạm hông sườn xe bên lái khi chuyển làn hoặc lưu thông song song trên đường phố thông thường,Giám sát dòng phương tiện lưu thông song song và xác định vị trí vạch kẻ làn đường bên trái
+left,hard,25,Điểm mù góc hông xe; xe máy luồn lách vượt sát sườn tại vùng méo quang học tối đa; lỗi chồng lấn seam với camera trước/sau,Kiểm tra khả năng phân tách đối tượng sát sườn xe và đánh giá chất lượng ghép ảnh tại góc giao thoa (seam region)
+right,normal,20,Va chạm sườn xe bên phụ với mép vỉa hè, gờ bó vỉa hoặc các phương tiện đang đỗ sát lề đường,Đo khoảng cách an toàn với chướng ngại vật tĩnh và định vị mép lề đường khi vận hành bình thường
+right,hard,25,Người đi bộ hoặc xe đạp từ vỉa hè bất ngờ lao xuống lòng đường vào điểm mù bên phụ; biến dạng quang sai mạnh tại seam trước-phải và sau-phải,Bảo vệ người tham gia giao thông yếu thế (VRU) trong các tình huống rẽ phải góc khuất và chuyển hướng trong đô thị

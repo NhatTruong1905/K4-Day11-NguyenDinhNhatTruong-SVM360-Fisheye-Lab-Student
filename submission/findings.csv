@@ -1,1 +1,30 @@
 round,slice,frame,object_ref,cell,what,why,severity,owner,rule_id,evidence,action,rules_version,note
+r1_craft,B1-mid,adasind_014670.jpg,L1,L_only,ATTRIBUTE,E1_annotator_error,P2,annotator,R05,Xe o to o ria phai cat vien kinh,keep_with_reason,v1.0.0,Xac nhan truncated=true
+r1_craft,B1-mid,adasind_032280.jpg,L1,L_only,STRUCTURE,E1_annotator_error,P1,annotator,R03,Nguoi lai ngoi tren xe hai banh,keep_with_reason,v1.0.0,Gop rider vao Bike duy nhat
+r1_craft,B1-mid,adasind_034080.jpg,L3,L_only,BOX_GEOMETRY,E1_annotator_error,P1,annotator,R01,Nguoi di bo chieu cao tren 40px,keep_with_reason,v1.0.0,Bam sat bien co the
+r2_qa,B1-mid,adasind_014670.jpg,L1,L_only,ATTRIBUTE,,P2,qa,R05,Vo xe cat vien kinh,keep_with_reason,v1.0.0,QA kiem tra truncated hop le
+r2_qa,B1-mid,adasind_032280.jpg,L1,L_only,STRUCTURE,,P1,qa,R03,Xe may va rider tren xe,keep_with_reason,v1.0.0,QA kiem tra dung rule R03 rider
+r2_qa,B1-mid,adasind_034080.jpg,L3,L_only,BOX_GEOMETRY,,P1,qa,R01,H > 40px tai edge zone,keep_with_reason,v1.0.0,QA kiem tra pham vi hop le
+r3_diag,B1-mid,adasind_014670.jpg,L3+R3,LR_noM,MISSING,E4_model_domain,P1,ai_team,R04,ThreeWheeler mid zone model bo sot,keep_with_reason,v1.0.0,Model meo fisheye khong phat hien ThreeWheeler
+r3_diag,B1-mid,adasind_014670.jpg,L5+R5,LR_noM,MISSING,E2_guideline_gap,P0,guideline,R04,Dau xe tai mep trai khung hinh cat gan het,escalate,v1.0.0,Ca xe tai bi cat ria khung hinh can guideline lam ro
+r3_diag,B1-mid,adasind_014670.jpg,M3,M_only,SPURIOUS,E4_model_domain,P2,ai_team,R02,Model du doan nham bong cay thanh vat the,keep_with_reason,v1.0.0,False positive do nhieu bong ram
+r3_diag,B1-mid,adasind_014670.jpg,M6,M_only,SPURIOUS,E4_model_domain,P2,ai_team,R02,Model du doan thua box tai vach le duong,keep_with_reason,v1.0.0,Spurious box tai ria
+r3_diag,B1-mid,adasind_014670.jpg,M7,M_only,SPURIOUS,E4_model_domain,P2,ai_team,R02,Model du doan trung lap,keep_with_reason,v1.0.0,Duplicate detection
+r3_diag,B1-mid,adasind_032280.jpg,L2+R2,LR_noM,MISSING,E4_model_domain,P1,ai_team,R04,ThreeWheeler di chuyen che khuat 1 phan,keep_with_reason,v1.0.0,Model bo sot do occlusion
+r3_diag,B1-mid,adasind_032280.jpg,L6+R6,LR_noM,MISSING,E4_model_domain,P1,ai_team,R04,ThreeWheeler nho o xa center zone,keep_with_reason,v1.0.0,Model khong nhan dien duoc ThreeWheeler xa
+r3_diag,B1-mid,adasind_032280.jpg,M3,M_only,SPURIOUS,E4_model_domain,P2,ai_team,R02,Model bat nham cot dien ven duong,keep_with_reason,v1.0.0,Nham lan vat the tinh
+r3_diag,B1-mid,adasind_032280.jpg,M5,M_only,SPURIOUS,E4_model_domain,P2,ai_team,R02,Model tao duplicate box tren Bike,keep_with_reason,v1.0.0,Tach nguoi va xe thay vi gop
+r3_diag,B1-mid,adasind_032280.jpg,M7,M_only,SPURIOUS,E4_model_domain,P2,ai_team,R02,Box hu ao tren bien hieu,keep_with_reason,v1.0.0,Spurious detection
+r3_diag,B1-mid,adasind_032280.jpg,M8,M_only,SPURIOUS,E4_model_domain,P2,ai_team,R02,Model du doan trung lap Pedestrian,keep_with_reason,v1.0.0,Duplicate detection
+r3_diag,B1-mid,adasind_032280.jpg,M9,M_only,SPURIOUS,E4_model_domain,P2,ai_team,R02,Box gia tai mai hien nha,keep_with_reason,v1.0.0,Spurious box
+r3_diag,B1-mid,adasind_032280.jpg,M11,M_only,SPURIOUS,E4_model_domain,P2,ai_team,R02,Box gia o goc tren,keep_with_reason,v1.0.0,Spurious detection
+r3_diag,B1-mid,adasind_034080.jpg,L5+R5,LR_noM,MISSING,E4_model_domain,P1,ai_team,R03,Bike o le trai bi che khuat 1 phan,keep_with_reason,v1.0.0,Model bo sot Bike mep trai
+r3_diag,B1-mid,adasind_034080.jpg,L7+R7,LR_noM,MISSING,E4_model_domain,P1,ai_team,R04,ThreeWheeler o trung tam bi nguoi di bo che,keep_with_reason,v1.0.0,Occlusion boi nguoi di bo
+r3_diag,B1-mid,adasind_034080.jpg,L8+R8,LRM,BOX_GEOMETRY,E1_annotator_error,P1,annotator,R01,Bike nho o xa meo le trai box chua toi uu,rework,v1.0.0,Chon rework tinh chinh geometry cho khop toi uu
+r3_diag,B1-mid,adasind_034080.jpg,L9+R9,LR_noM,MISSING,E4_model_domain,P1,ai_team,R04,ThreeWheeler xa center bi bo sot,keep_with_reason,v1.0.0,Model resolution thap
+r3_diag,B1-mid,adasind_034080.jpg,M7,M_only,SPURIOUS,E4_model_domain,P2,ai_team,R02,Box ao tai cua hang ben duong,keep_with_reason,v1.0.0,Spurious box
+r3_diag,B1-mid,adasind_034080.jpg,M8,M_only,SPURIOUS,E4_model_domain,P2,ai_team,R02,Box ao tai cay ben duong,keep_with_reason,v1.0.0,Spurious box
+r3_diag,B1-mid,adasind_034080.jpg,M9,M_only,SPURIOUS,E4_model_domain,P2,ai_team,R02,Duplicate box tren ThreeWheeler,keep_with_reason,v1.0.0,NMS khong loai duoc box trung
+r3_diag,B1-mid,adasind_034080.jpg,M10,M_only,SPURIOUS,E4_model_domain,P2,ai_team,R02,Spurious box tai nen duong,keep_with_reason,v1.0.0,False positive tren nen mat duong
+r3_diag,B1-mid,adasind_034080.jpg,M11,M_only,SPURIOUS,E4_model_domain,P2,ai_team,R02,Spurious detection le phai,keep_with_reason,v1.0.0,Spurious box tai bien quang cao
+r3_diag,B1-mid,adasind_034080.jpg,M12,M_only,SPURIOUS,E4_model_domain,P2,ai_team,R02,Duplicate box tren Car,keep_with_reason,v1.0.0,Model tach xe hoi thanh 2 box

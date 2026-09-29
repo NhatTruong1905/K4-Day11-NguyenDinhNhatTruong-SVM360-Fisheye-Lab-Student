@@ -1,0 +1,7 @@
+# Guideline patch
+
+- **Rule mới đề xuất:** **R12 — Ngưỡng nhận diện vật thể bị cắt viền (Truncated Boundary Threshold)**: Đối với các phương tiện giao thông (`Car`, `Truck`, `Bus`, `ThreeWheeler`, `Bike`) bị cắt bởi biên khung hình hoặc vành kính fisheye (`truncated = true`), chỉ gán bounding box nếu phần thân nhìn thấy đạt tối thiểu 20% thể tích ước lượng HOẶC nhìn thấy rõ ít nhất hai đặc trưng cấu trúc then chốt (như bánh xe, cụm đèn, kính chắn gió, tay lái). Nếu vật bị cắt cụt quá nặng không đủ đặc trưng phân loại chắc chắn, không vẽ box độc lập mà đánh dấu vào `ignore_region` với `reason = unreadable`.
+- **Áp dụng cho:** Các class phương tiện (`Car`, `Truck`, `Bus`, `ThreeWheeler`, `Bike`), thuộc tính `truncated`, tại vùng rìa (`edge` zone) giáp ranh viền ảnh và `lens_border`.
+- **Vì sao luật hiện tại (`docs/02-rules-vi.md`) không đủ:** Luật hiện tại v1.0.0 chỉ xét điều kiện chiều cao H ≥ 40 px (R01) và định nghĩa thuộc tính truncated (R05) mà không đưa ra quy định về tỷ lệ hiển thị tối thiểu của vật cắt rìa. Thực tế tại frame `adasind_014670.jpg` vật `L5` (Truck mép trái x=0..70), chiều cao H=255 px (thỏa mãn H≥40) nhưng chiều rộng chỉ 70 px (chỉ thấy một vệt ca-pô/bội xe tải), dẫn đến sự bất đồng giữa annotator và model/reference về việc có nên gán nhãn hay không. Thiếu R12 làm phát sinh xung đột không đáng có.
+- **`rules_version` mới:** `v1.1.0` (nâng cấp từ `v1.0.0`)
+- **Hiệu lực từ:** Vòng chẩn đoán và rework P4/P5 của Day 11, áp dụng chính thức cho toàn bộ pipeline dữ liệu SVM 360 tiếp theo.
